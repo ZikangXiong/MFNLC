@@ -1,5 +1,5 @@
 # Neural Lyapunov Deep Reinforcement Learning
-Code Repository of IROS 22' paper [Model-free Neural Lyapunov Control for Safe Robot Navigation](https://arxiv.org/abs/2203.01190)  
+Code Repository of IROS 22' paper **Model-free Neural Lyapunov Control for Safe Robot Navigation**
 
 [ArXiv](https://arxiv.org/abs/2203.01190) | [Demos](https://sites.google.com/view/mf-nlc)  
 
