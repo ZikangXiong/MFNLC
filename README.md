@@ -37,10 +37,10 @@ One can start tracing code from `exps` folder.
 
 ## Bibtex
 ```bibtex
-@article{Xiong2022ModelfreeNL,
+@inproceedings{Xiong2022ModelfreeNL,
   title={Model-free Neural Lyapunov Control for Safe Robot Navigation},
   author={Zikang Xiong and Joe Eappen and Ahmed H. Qureshi and Suresh Jagannathan},
-  Conference={2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  booktitle={2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
   year={2022},
 }
 ```
