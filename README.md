@@ -17,7 +17,7 @@ https://user-images.githubusercontent.com/73256697/184549907-50287e7f-fc0c-46fa-
     ├── config.py       # config file, including data path, default devices, ect. 
     ├── envs            # simulation environments
     ├── evaluation      # evaluation utils
-    ├── exps            # experiments scripts
+    ├── exps            # experiment scripts
     ├── learn           # low-level controller and neural Lyapunov function learning algorithms
     ├── monitor         # high-level monitor
     ├── plan            # high-level planner, RRT & RRT*
