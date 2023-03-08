@@ -1,12 +1,15 @@
 from setuptools import setup
 
 setup(
-    name='shrl',
+    name='mfnlc',
     version='0.0.1',
     packages=[''],
     url='https://github.com/ZikangXiong/mf-nlc',
     license='MIT',
     author='Zikang Xiong',
     author_email='zikangxiong@gmail.com',
-    description=''
+    description='Model Free Neural Lyapunov Control',
+    requirements=[
+        ''
+    ]
 )
