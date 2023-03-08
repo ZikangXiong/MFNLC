@@ -24,6 +24,14 @@ https://user-images.githubusercontent.com/73256697/184549907-50287e7f-fc0c-46fa-
     └── tests           # test cases
 ```
 
+## Install
+1. Install necessary dependencies. 
+```commandline
+pip install -e .
+```
+2. Configure MuJoCo-py by following official [README](https://github.com/openai/mujoco-py). 
+
+
 ## Quick Start
 Two quick start examples:
 

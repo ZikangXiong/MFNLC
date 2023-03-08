@@ -1,5 +1,8 @@
 from setuptools import setup
 
+with open('requirements.txt') as f:
+    required = f.read().splitlines()
+
 setup(
     name='mfnlc',
     version='0.0.1',
@@ -9,7 +12,5 @@ setup(
     author='Zikang Xiong',
     author_email='zikangxiong@gmail.com',
     description='Model Free Neural Lyapunov Control',
-    requirements=[
-        ''
-    ]
+    install_requires=required
 )

@@ -1,0 +1,5 @@
+stable-baselines3==1.6.0
+mujoco-py~=2.1.2.14
+seaborn>=0.12.2
+tensorboard>=2.12.0
+
