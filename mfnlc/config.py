@@ -1,4 +1,9 @@
+from os.path import dirname, abspath
+
+import mfnlc
+
 default_device = "cuda"
+ROOT = dirname(abspath(mfnlc.__file__))
 
 env_config = {
     "Nav": {
@@ -76,19 +81,19 @@ env_config = {
 
 
 def get_path(robot_name, algo, task):
-    root = "/data/mfnlc"
+    data_root = f"{ROOT}/mfnlc_data"
     if task == "log":
-        return f"{root}/{algo}/{robot_name}/{task}"
+        return f"{data_root}/{algo}/{robot_name}/{task}"
     elif task == "model":
         ext = "zip" if algo != "cpo" else "onnx"
-        return f"{root}/{algo}/{robot_name}/model.{ext}"
+        return f"{data_root}/{algo}/{robot_name}/model.{ext}"
     elif task == "tclf":
-        return f"{root}/{algo}/{robot_name}/tclf.pth"
+        return f"{data_root}/{algo}/{robot_name}/tclf.pth"
     elif task == "comparison":
-        return f"{root}/comparison/{robot_name}"
+        return f"{data_root}/comparison/{robot_name}"
     elif task == "evaluation":
-        return f"{root}/{algo}/{robot_name}/evaluation"
+        return f"{data_root}/{algo}/{robot_name}/evaluation"
     elif task == "lv_table":
-        return f"{root}/lyapunov_td3/{robot_name}/lv_table.pkl"
+        return f"{data_root}/lyapunov_td3/{robot_name}/lv_table.pkl"
     elif task == "video":
-        return f"{root}/{algo}/{robot_name}/evaluation/video_"
+        return f"{data_root}/{algo}/{robot_name}/evaluation/video_"

@@ -1,12 +1,10 @@
 # Neural Lyapunov Deep Reinforcement Learning
+
 Code Repository of IROS 22' paper **Model-free Neural Lyapunov Control for Safe Robot Navigation**
 
-[ArXiv](https://arxiv.org/abs/2203.01190) | [Demos](https://sites.google.com/view/mf-nlc)  
-
-
+[ArXiv](https://arxiv.org/abs/2203.01190) | [Demos](https://sites.google.com/view/mf-nlc)
 
 https://user-images.githubusercontent.com/73256697/184549907-50287e7f-fc0c-46fa-baf9-58660e8634eb.mp4
-
 
 ## Project Structure
 
@@ -25,25 +23,34 @@ https://user-images.githubusercontent.com/73256697/184549907-50287e7f-fc0c-46fa-
 ```
 
 ## Install
-1. Install necessary dependencies. 
+
+1. Install necessary dependencies.
+
 ```commandline
 pip install -e .
 ```
-2. Configure MuJoCo-py by following official [README](https://github.com/openai/mujoco-py). 
 
+2. Configure MuJoCo-py by following official [README](https://github.com/openai/mujoco-py).
+3. (Optional) Download pretrained models (~35 MB)
+
+```commandline
+bash download.sh
+```
 
 ## Quick Start
+
 Two quick start examples:
 
 1. Co-learning low-level controller and neural Lyapunov function  
-`python exps/train/no_obstacle/lyapunov_td3/[robot-name].py`
+   `python exps/train/no_obstacle/lyapunov_td3/[robot-name].py`
 
 2. Pre-compute monitor and evaluate  
-`python exps/hierachical/rrt_lyapunov/[robot-name].py`
+   `python exps/hierachical/rrt_lyapunov/[robot-name].py`
 
-One can start tracing code from `exps` folder. 
+One can start tracing code from `exps` folder.
 
 ## Bibtex
+
 ```bibtex
 @inproceedings{Xiong2022ModelfreeNL,
   title={Model-free Neural Lyapunov Control for Safe Robot Navigation},
